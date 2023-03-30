@@ -1,0 +1,18 @@
+Ricavare l'ip della rete dal gateway e dalla subnet
+
+Gateway: 192.168.10.1
+subnet mask: 255.255.255.0
+
+1)traduco gli ip in binario
+
+11000000.10101000. 00001010.00000001  // ip gateway
+11111111.11111111.11111111.10000000   // ip subnet mask
+
+2) eseguire l' and logico fra i due ip
+
+11000000.10101000. 00001010.10000001  
+11111111.11111111.11111111.10000000   
+
+11000000.10101000.00001010.10000000 //ip rete
+3) traduco l'ip in decimale
+192.168.10.128
